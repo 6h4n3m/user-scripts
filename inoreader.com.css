@@ -1,0 +1,21 @@
+/*
+==UserCSS==
+@name Inoreader
+@description Use Ubuntu fonts and medium article titles in Inoreader.
+@author Ahmed Ghanem
+@version 1.0.0
+@match *://*.inoreader.com/*
+==/UserCSS==
+*/
+
+body,
+body.font_family_sans_serif .article_content,
+body.font_family_sans_serif .article_annotation_text,
+body.font_family_sans_serif .highlighter_preview {
+  font-family: Ubuntu, sans-serif;
+}
+
+.article_header_title,
+.ar.article_unreaded .article_header_text .article_header_title {
+  font-weight: 500;
+}

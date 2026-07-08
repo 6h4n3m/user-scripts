@@ -1,0 +1,23 @@
+/*
+==UserCSS==
+@name X
+@description Use custom fonts and medium bold text on X.
+@author Ahmed Ghanem
+@version 1.0.0
+@match *://*.x.com/*
+==/UserCSS==
+*/
+
+span {
+  font-family: 'Ubuntu', 'IBM Plex Sans Arabic', 'Noto Sans CJK JP', 'Noto Sans CJK SC', 'Noto Sans CJK TC', 'Noto Sans CJK KR' !important;
+}
+
+div[lang=ar] > span,
+span[dir=rtl],
+input {
+  font-family: 'IBM Plex Sans Arabic', Ubuntu, 'Noto Sans CJK JP', 'Noto Sans CJK SC', 'Noto Sans CJK TC', 'Noto Sans CJK KR' !important;
+}
+
+.r-b88u0q {
+  font-weight: 500;
+}

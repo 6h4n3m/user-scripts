@@ -1,0 +1,28 @@
+/*
+==UserCSS==
+@name Reddit
+@description Use Ubuntu for text and JetBrains Mono for code on Reddit.
+@author Ahmed Ghanem
+@version 1.0.0
+@match *://*.reddit.com/*
+==/UserCSS==
+*/
+
+:root,
+button,
+html,
+input,
+select {
+  font-family: "Ubuntu", 'Segoe UI Semibold', Roboto, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: 'JetBrains Mono', 'TX-02 Medium SemiCondensed', Noto Mono, Menlo, Monaco, Consolas, monospace;
+}
+
+.font-semibold {
+  font-weight: 500;
+}
