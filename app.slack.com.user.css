@@ -3,7 +3,8 @@
 @name Slack
 @description Use Ubuntu and IBM Plex Sans fonts in Slack.
 @author Ahmed Ghanem
-@version 1.0.0
+@version 1.0.1
+@updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/app.slack.com.user.css
 @match *://*.app.slack.com/*
 ==/UserCSS==
 */

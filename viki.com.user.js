@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Viki DASH Quality Floor
 // @namespace    ahmed.viki.quality.floor
-// @version      1.0.0
+// @version      1.0.1
+// @updateURL    https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/viki.com.user.js
 // @description  Keep Viki DASH playback at 1080p or higher when available.
 // @author       Ahmed Ghanem
 // @match        https://www.viki.com/*

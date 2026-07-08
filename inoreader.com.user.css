@@ -3,7 +3,8 @@
 @name Inoreader
 @description Use Ubuntu fonts and medium article titles in Inoreader.
 @author Ahmed Ghanem
-@version 1.0.0
+@version 1.0.1
+@updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/inoreader.com.user.css
 @match *://*.inoreader.com/*
 ==/UserCSS==
 */
