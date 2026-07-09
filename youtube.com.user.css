@@ -3,7 +3,8 @@
 @name YouTube
 @description Use Ubuntu fonts and adjust compact title styling on YouTube.
 @author Ahmed Ghanem
-@version 1.0.1
+@version 1.0.2
+@downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/youtube.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/youtube.com.user.css
 @match *://*.youtube.com/*
 ==/UserCSS==
