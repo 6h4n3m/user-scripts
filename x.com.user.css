@@ -3,7 +3,7 @@
 @name X
 @description Use custom fonts and medium bold text on X. Restore the old 2-column image grid for posts with 2-4 images.
 @author Ahmed Ghanem
-@version 1.1.1
+@version 1.1.2
 @downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/x.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/x.com.user.css
 @match *://*.x.com/*
@@ -62,7 +62,8 @@ article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-c
 article [data-testid="ScrollSnap-List"]:has(> :nth-child(3):last-child) > :first-child {
   grid-row: span 2 !important;
 }
-/* hide carousel arrows in grid mode */
-article div:has(> [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(2):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(3):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(4):last-child) > :is([data-testid="ScrollSnap-prevButtonWrapper"], [data-testid="ScrollSnap-nextButtonWrapper"]) {
+/* Hide carousel controls that are redundant in grid mode. */
+article div:has(> [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(2):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(3):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(4):last-child) > :is([data-testid="ScrollSnap-prevButtonWrapper"], [data-testid="ScrollSnap-nextButtonWrapper"]),
+article nav:has([data-testid="ScrollSnap-List"]) + [aria-hidden="true"] {
   display: none !important;
 }
