@@ -3,7 +3,7 @@
 @name X
 @description Use custom fonts and medium bold text on X. Restore the old 2-column image grid for posts with 2-4 images.
 @author Ahmed Ghanem
-@version 1.1.0
+@version 1.1.1
 @downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/x.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/x.com.user.css
 @match *://*.x.com/*
@@ -24,8 +24,11 @@ input {
   font-weight: 500;
 }
 
-/* Restore the old 2-column image grid for posts with 2-4 images (replaces the carousel).
-   Scoped to article (tweets) so non-tweet carousels (tab bar, composer toolbar) are never touched. */
+/* Restore the old 2-column image grid for posts with 2-4 images.
+   Scoped to tweets; the placeholder correction accounts for X's 2px nav bleed. */
+article div[style*="padding-bottom"]:has(> nav [data-testid="ScrollSnap-List"]) {
+  padding-bottom: calc(56.25% - 1.75px) !important;
+}
 article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) {
   display: grid !important;
   width: 100% !important;
