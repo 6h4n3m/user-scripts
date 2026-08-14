@@ -1,9 +1,9 @@
 /*
 ==UserCSS==
 @name X
-@description Use custom fonts and medium bold text on X.
+@description Use custom fonts and medium bold text on X. Restore the old 2-column image grid for posts with 2-4 images.
 @author Ahmed Ghanem
-@version 1.0.2
+@version 1.1.0
 @downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/x.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/x.com.user.css
 @match *://*.x.com/*
@@ -22,4 +22,44 @@ input {
 
 .r-b88u0q {
   font-weight: 500;
+}
+
+/* Restore the old 2-column image grid for posts with 2-4 images (replaces the carousel).
+   Scoped to article (tweets) so non-tweet carousels (tab bar, composer toolbar) are never touched. */
+article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) {
+  display: grid !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  grid-template-columns: 1fr 1fr !important;
+  grid-auto-rows: 1fr !important;
+  gap: 2px !important;
+  aspect-ratio: 16 / 9;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  scroll-snap-type: none !important;
+  border-radius: 16px;
+}
+article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) > * {
+  width: auto !important;
+  min-width: 0 !important;
+}
+article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) > * > :first-child {
+  aspect-ratio: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) img {
+  object-fit: cover !important;
+}
+/* 3 images: first image spans both rows (big left cell) */
+article [data-testid="ScrollSnap-List"]:has(> :nth-child(3):last-child) > :first-child {
+  grid-row: span 2 !important;
+}
+/* hide carousel arrows in grid mode */
+article div:has(> [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(2):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(3):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(4):last-child) > :is([data-testid="ScrollSnap-prevButtonWrapper"], [data-testid="ScrollSnap-nextButtonWrapper"]) {
+  display: none !important;
 }
