@@ -1,16 +1,17 @@
 /*
-==UserCSS==
+==UserStyle==
 @name Whatsapp
+@namespace https://github.com/6h4n3m/user-scripts
 @description Use Ubuntu and Arabic fallback fonts in WhatsApp Web.
 @author Ahmed Ghanem
 @version 1.0.2
-@downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/web.whatsapp.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/web.whatsapp.com.user.css
-@match *://*.web.whatsapp.com/*
-==/UserCSS==
+==/UserStyle==
 */
 
-html,
-body {
-  font-family: Ubuntu, "IBM Plex Sans Arabic", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, Cantarell, "Fira Sans", sans-serif !important;
+@-moz-document domain("web.whatsapp.com") {
+  html,
+  body {
+    font-family: Ubuntu, "IBM Plex Sans Arabic", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, Cantarell, "Fira Sans", sans-serif !important;
+  }
 }

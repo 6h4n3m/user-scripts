@@ -1,23 +1,24 @@
 /*
-==UserCSS==
+==UserStyle==
 @name YouTube
+@namespace https://github.com/6h4n3m/user-scripts
 @description Use Ubuntu fonts and adjust compact title styling on YouTube.
 @author Ahmed Ghanem
 @version 1.0.2
-@downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/youtube.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/youtube.com.user.css
-@match *://*.youtube.com/*
-==/UserCSS==
+==/UserStyle==
 */
 
-* {
-  font-family: 'Ubuntu', 'Segoe UI Semibold', "Roboto", "Arial", sans-serif !important;
-}
+@-moz-document domain("youtube.com") {
+  * {
+    font-family: 'Ubuntu', 'Segoe UI Semibold', "Roboto", "Arial", sans-serif !important;
+  }
 
-.ytp-sfn-content > div > div {
-  min-width: 10.5em;
-}
+  .ytp-sfn-content > div > div {
+    min-width: 10.5em;
+  }
 
-.yt-lockup-metadata-view-model--compact .yt-lockup-metadata-view-model__title {
-  font-weight: 400;
+  .yt-lockup-metadata-view-model--compact .yt-lockup-metadata-view-model__title {
+    font-weight: 400;
+  }
 }

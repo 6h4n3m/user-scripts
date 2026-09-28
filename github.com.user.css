@@ -1,27 +1,28 @@
 /*
-==UserCSS==
+==UserStyle==
 @name Github
+@namespace https://github.com/6h4n3m/user-scripts
 @description Use Ubuntu for text and JetBrains Mono for code on GitHub.
 @author Ahmed Ghanem
 @version 1.0.2
-@downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/github.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/github.com.user.css
-@match *://*.github.com/*
-==/UserCSS==
+==/UserStyle==
 */
 
-body,
-.markdown-body {
-  font-family: "Ubuntu", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-}
+@-moz-document domain("github.com") {
+  body,
+  .markdown-body {
+    font-family: "Ubuntu", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  }
 
-tt,
-code,
-samp,
-.blob-code-inner,
-.react-blob-textarea,
-#read-only-cursor-text-area {
-  font-family: 'JetBrains Mono', 'TX-02 Semibold SemiCondensed', 'SFMono-Regular', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
+  tt,
+  code,
+  samp,
+  .blob-code-inner,
+  .react-blob-textarea,
+  #read-only-cursor-text-area {
+    font-family: 'JetBrains Mono', 'TX-02 Semibold SemiCondensed', 'SFMono-Regular', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
 }

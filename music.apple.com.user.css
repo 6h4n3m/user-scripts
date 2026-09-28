@@ -1,16 +1,17 @@
 /*
-==UserCSS==
+==UserStyle==
 @name Apple Music
+@namespace https://github.com/6h4n3m/user-scripts
 @description Use Ubuntu fonts in Apple Music.
 @author Ahmed Ghanem
 @version 1.0.2
-@downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/music.apple.com.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/music.apple.com.user.css
-@match *://*.music.apple.com/*
-==/UserCSS==
+==/UserStyle==
 */
 
-* {
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, Apple Color Emoji, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-  font-weight: 500 !important;
+@-moz-document domain("music.apple.com") {
+  * {
+    font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, Apple Color Emoji, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-weight: 500 !important;
+  }
 }

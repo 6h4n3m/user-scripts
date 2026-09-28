@@ -1,21 +1,22 @@
 /*
-==UserCSS==
+==UserStyle==
 @name Youku
+@namespace https://github.com/6h4n3m/user-scripts
 @description Use Ubuntu fonts for Subtitles.
 @author Ahmed Ghanem
 @version 1.0.0
-@downloadURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/youku.tv.user.css
 @updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/youku.tv.user.css
-@match *://*.youku.tv/*
-==/UserCSS==
+==/UserStyle==
 */
 
-#subtitle svg text,
-#subtitle svg tspan {
-    font-family: "Ubuntu", sans-serif !important;
-    letter-spacing: 0 !important;
-    stroke: black !important;
-    stroke-width: 1.5px !important;
-    stroke-linejoin: round !important;
-    paint-order: stroke fill !important;
+@-moz-document domain("youku.tv") {
+    #subtitle svg text,
+    #subtitle svg tspan {
+        font-family: "Ubuntu", sans-serif !important;
+        letter-spacing: 0 !important;
+        stroke: black !important;
+        stroke-width: 1.5px !important;
+        stroke-linejoin: round !important;
+        paint-order: stroke fill !important;
+    }
 }
