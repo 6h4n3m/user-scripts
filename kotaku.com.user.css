@@ -1,0 +1,16 @@
+/*
+==UserStyle==
+@name Kotaku
+@namespace https://github.com/6h4n3m/user-scripts
+@description Use Ubuntu fonts for body text on Kotaku.
+@author Ahmed Ghanem
+@version 1.0.0
+@updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/kotaku.com.user.css
+==/UserStyle==
+*/
+
+@-moz-document domain("kotaku.com") {
+  body {
+    font-family: Ubuntu, Work Sans, Work Sans fallback, sans-serif;
+  }
+}

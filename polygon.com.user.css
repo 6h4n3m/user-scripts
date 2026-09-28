@@ -1,0 +1,17 @@
+/*
+==UserStyle==
+@name Polygon
+@namespace https://github.com/6h4n3m/user-scripts
+@description Use Ubuntu fonts for card titles on Polygon.
+@author Ahmed Ghanem
+@version 1.0.0
+@updateURL https://raw.githubusercontent.com/6h4n3m/user-scripts/refs/heads/master/polygon.com.user.css
+==/UserStyle==
+*/
+
+@-moz-document domain("polygon.com") {
+  .display-card .display-card-title,
+  .template-grid-tall.template-grid-tall-extended .featured-news .sentinel-featuredNews .display-card .display-card-title {
+    font-family: Ubuntu, Montserrat, sans-serif;
+  }
+}
