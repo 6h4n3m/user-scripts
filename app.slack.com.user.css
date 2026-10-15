@@ -10,7 +10,9 @@
 */
 
 @-moz-document domain("app.slack.com") {
+
   * {
     font-family: Ubuntu, IBM Plex Sans;
   }
+
 }

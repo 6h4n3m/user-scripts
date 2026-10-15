@@ -10,7 +10,9 @@
 */
 
 @-moz-document domain("kotaku.com") {
+
   body {
     font-family: Ubuntu, Work Sans, Work Sans fallback, sans-serif;
   }
+
 }

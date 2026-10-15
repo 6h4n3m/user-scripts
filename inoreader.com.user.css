@@ -10,6 +10,7 @@
 */
 
 @-moz-document domain("inoreader.com") {
+
   body,
   body.font_family_sans_serif .article_content,
   body.font_family_sans_serif .article_annotation_text,
@@ -21,4 +22,5 @@
   .ar.article_unreaded .article_header_text .article_header_title {
     font-weight: 500;
   }
+
 }

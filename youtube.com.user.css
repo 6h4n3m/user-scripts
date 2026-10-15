@@ -10,15 +10,17 @@
 */
 
 @-moz-document domain("youtube.com") {
+
   * {
     font-family: 'Ubuntu', 'Segoe UI Semibold', "Roboto", "Arial", sans-serif !important;
   }
 
-  .ytp-sfn-content > div > div {
+  .ytp-sfn-content>div>div {
     min-width: 10.5em;
   }
 
   .yt-lockup-metadata-view-model--compact .yt-lockup-metadata-view-model__title {
     font-weight: 400;
   }
+
 }

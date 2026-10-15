@@ -10,6 +10,7 @@
 */
 
 @-moz-document domain("youku.tv") {
+
     #subtitle svg text,
     #subtitle svg tspan {
         font-family: "Ubuntu", sans-serif !important;
@@ -19,4 +20,5 @@
         stroke-linejoin: round !important;
         paint-order: stroke fill !important;
     }
+
 }

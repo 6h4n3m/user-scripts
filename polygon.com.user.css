@@ -10,8 +10,10 @@
 */
 
 @-moz-document domain("polygon.com") {
+
   .display-card .display-card-title,
   .template-grid-tall.template-grid-tall-extended .featured-news .sentinel-featuredNews .display-card .display-card-title {
     font-family: Ubuntu, Montserrat, sans-serif;
   }
+
 }

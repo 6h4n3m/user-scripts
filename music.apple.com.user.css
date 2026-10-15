@@ -10,8 +10,10 @@
 */
 
 @-moz-document domain("music.apple.com") {
+
   * {
     font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, Apple Color Emoji, Helvetica Neue, Helvetica, Arial, sans-serif !important;
     font-weight: 500 !important;
   }
+
 }

@@ -14,7 +14,7 @@
     font-family: 'Ubuntu', 'IBM Plex Sans Arabic', 'Noto Sans CJK JP', 'Noto Sans CJK SC', 'Noto Sans CJK TC', 'Noto Sans CJK KR' !important;
   }
 
-  div[lang=ar] > span,
+  div[lang=ar]>span,
   span[dir=rtl],
   input {
     font-family: 'IBM Plex Sans Arabic', Ubuntu, 'Noto Sans CJK JP', 'Noto Sans CJK SC', 'Noto Sans CJK TC', 'Noto Sans CJK KR' !important;
@@ -29,6 +29,7 @@
   article div[style*="padding-bottom"]:has(> nav [data-testid="ScrollSnap-List"]) {
     padding-bottom: calc(56.25% - 1.75px) !important;
   }
+
   article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) {
     display: grid !important;
     width: 100% !important;
@@ -44,31 +45,35 @@
     scroll-snap-type: none !important;
     border-radius: 16px;
   }
-  article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) > * {
+
+  article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child)>* {
     width: auto !important;
     min-width: 0 !important;
   }
-  article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) > * > :first-child {
+
+  article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child)>*> :first-child {
     aspect-ratio: auto !important;
     width: 100% !important;
     height: 100% !important;
     border: 0 !important;
     border-radius: 0 !important;
   }
+
   article [data-testid="ScrollSnap-List"]:has(> :nth-child(2):last-child, > :nth-child(3):last-child, > :nth-child(4):last-child) img {
     object-fit: cover !important;
   }
+
   /* 3 images: first image spans both rows (big left cell) */
-  article [data-testid="ScrollSnap-List"]:has(> :nth-child(3):last-child) > :first-child {
+  article [data-testid="ScrollSnap-List"]:has(> :nth-child(3):last-child)> :first-child {
     grid-row: span 2 !important;
   }
+
   /* Hide carousel controls that are redundant in grid mode. */
-  article div:has(> [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(2):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(3):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(4):last-child) > :is([data-testid="ScrollSnap-prevButtonWrapper"], [data-testid="ScrollSnap-nextButtonWrapper"]),
-  article div:has(
-    > [aria-hidden="true"] + div[style*="padding-bottom"] nav [data-testid="ScrollSnap-List"] > :nth-child(2):last-child,
+  article div:has(> [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(2):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(3):last-child, > [data-testid="ScrollSnap-SwipeableList"] > [data-testid="ScrollSnap-List"] > :nth-child(4):last-child)> :is([data-testid="ScrollSnap-prevButtonWrapper"], [data-testid="ScrollSnap-nextButtonWrapper"]),
+  article div:has(> [aria-hidden="true"] + div[style*="padding-bottom"] nav [data-testid="ScrollSnap-List"] > :nth-child(2):last-child,
     > [aria-hidden="true"] + div[style*="padding-bottom"] nav [data-testid="ScrollSnap-List"] > :nth-child(3):last-child,
-    > [aria-hidden="true"] + div[style*="padding-bottom"] nav [data-testid="ScrollSnap-List"] > :nth-child(4):last-child
-  ) > [aria-hidden="true"] {
+    > [aria-hidden="true"] + div[style*="padding-bottom"] nav [data-testid="ScrollSnap-List"] > :nth-child(4):last-child)>[aria-hidden="true"] {
     display: none !important;
   }
+
 }

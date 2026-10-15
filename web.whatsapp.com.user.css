@@ -10,8 +10,10 @@
 */
 
 @-moz-document domain("web.whatsapp.com") {
+
   html,
   body {
     font-family: Ubuntu, "IBM Plex Sans Arabic", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, Cantarell, "Fira Sans", sans-serif !important;
   }
+
 }
