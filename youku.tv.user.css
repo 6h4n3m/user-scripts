@@ -22,4 +22,9 @@
         paint-order: stroke fill !important;
     }
 
+    #subtitle svg {
+        overflow: visible !important;
+        translate: 0 -60px !important;
+    }
+
 }
